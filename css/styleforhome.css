@@ -1,0 +1,65 @@
+/* ******************* */
+figure{
+    margin: 0;
+}
+.icons-cont img{
+    width: 100px;
+    height: 100px;
+    transition: width 1s, height 1s;
+}
+.icons-cont a{
+    display: block;
+    text-align: center;
+}
+
+.icons-cont li img:hover,
+.icons-cont li img:focus-within{
+    filter: saturate(2.2);
+    width: 110px;
+    height: 110px;          
+}
+.icons-cont li{
+    flex-basis: 33.3333%;
+}
+.icons-cont{
+    height: 120px;
+}
+.mitglied{
+    height: 310px;
+}
+.mitglied img{
+    height: 250px;
+    width: 250px;
+    transition: width 1s, height 1s;
+}
+.mitglied img:hover,
+.mitglied img:focus-within{
+    filter: saturate(2.2);
+    width: 260px;
+    height: 260px;          
+}
+.mitglied a{
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .header{
+        flex-direction: column;
+    }
+    nav{
+        flex-basis: 100%;
+        align-self: flex-start;
+    }
+    .divs-cont{
+        flex-direction: column;
+    }
+    .div1,.div2{
+         --col:100%;
+        width: var(--col)
+    }
+}
+
+
+
+

@@ -1,0 +1,40 @@
+/* varibelen  */
+:root{
+    /* farben */
+    --color1:#0C1B39;
+    --color2:#C2B381;
+    --color3:#997F62;
+    --color4:#FFFCF0;
+    --color5:#DBB68A;
+    --color6:#000;
+/* ********************************** */
+    --col:0px;
+/* ************************************/
+/* margin & padding */
+    --mar-l:0;
+    --mar-r:0;
+    --pad-r:0;
+    --pad-l:0;
+}
+
+/* ********************************** */
+/* !Knownrules */
+ul,ol{
+    list-style:none;
+    padding-left:0;
+    margin: 0;
+}
+nav ul li a{
+    text-align: center;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+img{display:inline-block;}
+
+.inl-block{
+   display: inline-block; 
+}
+.txt-center{
+    text-align: center;
+}

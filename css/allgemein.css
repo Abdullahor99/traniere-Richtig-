@@ -1,0 +1,157 @@
+html {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--color6);
+  background-color: rgb(255 255 255);
+  font-size: 1em;
+  line-height: 1.5em;
+  box-sizing: content-box;
+}
+body {
+  margin: 0;
+}
+.wraper {
+  background-color: var(--color4);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color1);
+}
+h1 {
+  text-align: center;
+}
+.wraper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+}
+header {
+  background-color: var(--color1);
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo-cont {
+  flex-basis: 14%;
+}
+.logo-cont img {
+  display: block;
+}
+nav {
+  display: inline-block;
+  align-self: flex-end;
+  flex-basis: 86%;
+}
+
+nav ul li {
+  margin-right: 30px;
+  color: var(--color2);
+  font-size: 1.5em;
+  line-height: 2em;
+}
+nav ul ul li {
+  color: var(--color2);
+  font-size: 1em;
+  line-height: 1.2em;
+  text-align: center;
+}
+nav ul ul {
+  background-color: rgba(12, 27, 57, 0.8);
+}
+nav ul li:hover,
+nav ul li:focus-within {
+  color: var(--color3);
+}
+nav ul li:hover > ul,
+nav ul li:focus-within > ul {
+  left: auto;
+}
+
+nav a.active {
+  color: var(--color4);
+}
+
+.dropdown-icon::after {
+  content: "&#x25BC";
+}
+
+footer {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+p > a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+p > a:hover,
+p > a:focus {
+  text-decoration: underline;
+}
+
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+  z-index: 0;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+*:before{
+  box-sizing: border-box;
+}
+@media screen and (max-width: 950px) {
+  .header {
+    flex-direction: column;
+  }
+  nav {
+    flex-basis: 100%;
+    align-self: flex-start;
+  }
+}
+@media screen and (max-width: 650px) {
+  .navi-ul {
+    flex-direction: column;
+  }
+  nav ul li a {
+    text-align: unset;
+  }
+  li:focus-within .dropdown,
+  li:hover .dropdown {
+    position: static;
+  }
+  .header {
+    position: static;
+  }
+}

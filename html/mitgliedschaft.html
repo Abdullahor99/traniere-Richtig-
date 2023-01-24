@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitgliedschaft</title>
+  <link rel="stylesheet" href="../css/helpclasses.css" />
+  <link rel="stylesheet" href="../css/styleguide.css" />
+  <link rel="stylesheet" href="../css/allgemein.css" />
+  <link rel="stylesheet" href="../css/mitgledschaftstyle.css">
+  <style>
+    :root {
+      --mar-r: 10px;
+      --pad-r: 0;
+      --pad-l: 0;
+      --mar-l: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wraper">
+    <header class="flex f-row header">
+      <div class="logo-cont">
+        <img src="../img/Logotraniererichtig.png" alt="Traniere richtig" />
+      </div>
+      <nav>
+        <ul class="flex f-row navi-ul">
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="#">
+              Workouts
+              <span>&#x25BC;</span>
+            </a>
+            <ul class="dropdown hide-offset flex f-col">
+              <li><a href="../html/brust-trizeps.html">Brust/Trizeps</a></li>
+              <li><a href="../html/ruecken-bizeps.html">Rücken/Bizeps</a></li>
+              <li><a href="../html/schulter-Beine.html">Schulter/Beine</a></li>
+              <li><a href="../html/Bauch.html">Bauch</a></li>
+            </ul>
+          </li>
+          <li><a href="../html/Rezepte.html">Rezepte</a></li>
+          <li><a href="../html/mitgliedschaft.html" class="active">Mitgliedschaft</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="mitgleidschaft-angebot mar-l mar-l">
+        <h1>Sichire dir ein Mitgliedschaft</h1>
+        <h2>Die Vorteile die Unser Mitglieder haben:</h2>
+        <ul class="check-list">
+          <li>Ein individules Traning Plan</li>
+          <li>Ein Kontakt Aufnahme mit unserem Personal in die Methode die Sie möchten</li>
+          <li>Erfahrener Tranier/Tranierin die sie begleiten werden</li>
+          <li>Zugrigf auf unser Zahlreiche Rezepte und Workouts</li>
+        </ul>
+        <h3>Hat Sie unser Angeobt Überzeugt?</h3>
+        <p>Werde jetzt einer von Uns für nur 16.99€ Pro. Monat</p>
+      </section>
+      <section class="kontakt">
+        <h3 class="mar-l mar-r">Nehmen Sie ein Kontakt mit unser Personal auf....</h3>
+        <form>
+          <h4>biite wählen sie ein Grund</h4>
+          <select name="grund-der-Kontakt " class="feedback-input">
+            <option value="mitglied">Mitglied werden</option>
+            <option value="generall">Generelle fragen</option>
+            <option value="tranier">Ein Tranier werden</option>
+          </select>
+          <input name="vorname" type="text" class="feedback-input" placeholder="Vorname" required />
+          <input name="nachname" type="text" class="feedback-input" placeholder="Nachname" required />
+          <input name="email" type="text" class="feedback-input" placeholder="Email" required />
+          <textarea name="text" class="feedback-input" placeholder="Nachricht"></textarea>
+          <input type="submit" value="Senden" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p class="txt-center">created with love by Abdullah Orabi</p>
+      <p><a href="impresum.html">impresum</a></p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
