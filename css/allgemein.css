@@ -62,7 +62,7 @@ nav ul ul li {
   text-align: center;
 }
 nav ul ul {
-  background-color: rgba(12, 27, 57, 0.8);
+  background-color: rgba(12, 27, 57, 1);
 }
 nav ul li:hover,
 nav ul li:focus-within {
@@ -82,8 +82,10 @@ nav a.active {
 }
 
 footer {
+  padding: 10px;
   background-color: var(--color2);
   color: var(--color1);
+  height: 50px;
 }
 p:last-child {
   margin-bottom: 0;
@@ -154,4 +156,13 @@ p > a:focus {
   .header {
     position: static;
   }
+}
+/* .impresum a{
+  margin-left: 10px;
+} */
+.impresum{
+  margin: 0
+}
+.footer-txt{
+  margin: 0;
 }
